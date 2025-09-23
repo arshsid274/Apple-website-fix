@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./public/assets/images/apple.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+    
+    <!-- Preload critical video -->
+    <link rel="preload" href="/assets/videos/frame.mp4" as="video" type="video/mp4">
+    
+    <!-- Preload 3D models -->
+    <link rel="preload" href="/models/scene.glb" as="fetch" crossorigin="anonymous">
+    <link rel="preload" href="/models/mac.glb" as="fetch" crossorigin="anonymous">
+    
+    <!-- Preload critical images -->
+    <link rel="preload" href="/assets/images/frame.png" as="image">
+    <link rel="preload" href="/assets/images/chip.jpeg" as="image">
+    
+    <!-- Resource hints -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="preconnect" href="//fonts.googleapis.com">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
